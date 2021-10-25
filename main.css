@@ -17,11 +17,15 @@
 
 .btn-light {
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
 
 .btn-dark {
   color: #f4f4f4;
-  background-color: #333; }
+  background-color: #333; 
+   border-radius: 5px;
+}
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
@@ -220,7 +224,7 @@ img {
       border-color: #a894ff; }
 
 #header-home {
-  background: url("cover.jpg") no-repeat center right/cover;
+  background: url("img/cover.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -231,7 +235,7 @@ img {
       line-height: 1.2; }
 
 #header-inner {
-  background: url("cover.jpg") no-repeat 20% 48%/cover;
+  background: url("img/cover.jpg") no-repeat 20% 48%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #a894ff; }
 
@@ -446,6 +450,52 @@ img {
       #main-footer .footer-content .social .fab:hover {
         background: #a894ff; }
 
+        .photo {
+          display: flex;
+          flex-direction: column;
+          
+          text-align: center;
+          width: 450px;
+          height: 380px;
+          padding-left: 5px;
+          padding-right: 5px;
+          border-radius: 5px;
+          
+        }
+        .photo h4 {
+          padding-top:1rem;
+        }
+        .portfolio-header h4 {
+         margin-top: 2rem;
+        }
+
+         .section-title-portfolio {
+          font-size: 2rem;
+          margin-top: 2.5rem;
+          display: block;
+          padding-bottom:0.4rem;
+          text-align: center;
+          font-weight: 100;
+          text-transform: uppercase;
+         }
+      .lead-portfolio {
+        text-align: center;
+        font-size: 1.3rem;
+      }
+        
+  .portfolio-content-1 {
+    display: flex;
+    justify-content: space-between;
+    
+    
+  }
+  .portfolio-content-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    
+  }
+
 @media (max-width: 800px) {
   #header-home {
     height: 30rem; }
@@ -509,13 +559,59 @@ img {
     #main-footer .footer-content {
       flex-direction: column;
       padding: 1rem;
-      height: 5rem; } }
+      height: 5rem; } 
 
+      .portfolio-content-1 {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+      .portfolio-content-2 {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+      .photo {
+        
+        width: 100%;
+        height: auto;
+        margin-top: auto
+      }
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+      .footer-content p {
+        font-size: 0.99rem;
+      }
+    }
+    @media (max-width:325px) {
+      .footer-content p {
+        font-size: 0.8rem;
+        
+      }
+      #main-nav li {
+        
+        
+      }
+
+    }
 @media (max-height: 580px) {
   #header-home .header-content {
-    padding-top: 3rem; } 
+    padding-top: 1.6rem; } 
   }
 @media (max-height: 330px) {
   #header-home .header-content h1 {
     font-size: 2rem; } 
+    .header-content {
+      margin-top: 0.1rem;
+    }
+    .specials {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+    }
   }
