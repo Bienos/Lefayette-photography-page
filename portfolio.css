@@ -193,3 +193,17 @@
                                       margin-top: 8px;
                                       vertical-align:bottom;
                                       width: 100%; } 
+@media (max-height:420px) {
+    .portfolio-content-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-content-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

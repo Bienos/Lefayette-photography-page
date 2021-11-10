@@ -396,6 +396,10 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
+    #contact-a {
+      align-items: center;
+    }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';
@@ -414,6 +418,9 @@ img {
     height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem; }
+    .text-input:focus {
+      outline:none;
+    }
 
 #contact-a button[type='submit'] {
   width: 50%; }
@@ -553,7 +560,7 @@ img {
       margin-bottom: 0;
       padding-bottom: 0; }
   #contact-c h1 {
-    font-size: 2rem; }
+    font-size: 1.9rem; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {
@@ -588,25 +595,28 @@ img {
       .footer-content p {
         font-size: 0.99rem;
       }
+       .row-pregnant .column-pregnant{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 4px;
     }
-    @media (max-width:325px) {
+    }
+    @media (max-width:330px) {
       .footer-content p {
         font-size: 0.8rem;
-        
       }
-      #main-nav li {
-        
-        
+      .main-nav ul li a {
+        font-size: 0.1rem;
       }
-
     }
 @media (max-height: 580px) {
   #header-home .header-content {
     padding-top: 1.6rem; } 
   }
-@media (max-height: 330px) {
+@media (max-height: 420px) {
   #header-home .header-content h1 {
-    font-size: 2rem; } 
+    font-size: 2.5rem; } 
     .header-content {
       margin-top: 0.1rem;
     }
@@ -614,4 +624,23 @@ img {
       display: grid;
       grid-template-columns: repeat(1,1fr);
     }
+    #about-a .about-info {
+    display: flex;
+    flex-direction: column;}
+    #about-a .about-info img {
+      width: 80%;
+    }
+    #about-a .about-info .bio-content p {
+      padding-bottom: 1rem;
+
+    }
+    #about-d .testimonials {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
   }
+  @media (max-height: 330px) {
+    #header-home .header-content h1 {
+      font-size: 2rem; } 
+    }
