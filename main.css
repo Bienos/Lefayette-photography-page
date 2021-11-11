@@ -567,16 +567,7 @@ img {
       margin-top: 0rem;
       padding-top: 2rem;
     }
-    #about-d .testimonials div {
-      border-bottom:1px rgba(124, 123, 123, 0.466) solid ;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      
-    }
-    #about-d .testimonials div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
+    
      
       
       
@@ -681,7 +672,17 @@ img {
       margin-top: 0;
       padding-top: 0;
     }
-   
+    #about-d .testimonials div {
+      border-bottom:1px rgba(124, 123, 123, 0.466) solid ;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      
+    }
+    #about-d .testimonials div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+      
   #about-c {
     display: none; }
   #contact-a .text-fields {
